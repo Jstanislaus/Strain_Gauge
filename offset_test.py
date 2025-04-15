@@ -35,7 +35,7 @@ while True:
             weightsum=0
         time.sleep(0.1)
         if i == 50:
-            for j in array:
+            for j in range(len(array)):
                 totalsum +=array[j]
             print(f"average weight: {totalsum/len(array)} grams")
             time.sleep(10)
