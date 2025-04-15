@@ -27,7 +27,7 @@ while True:
         weightsum += weight
         i += 1
         if i %4==0:
-            print(f"Weight: {(((weightsum)))} grams")
+            print(f"Weight: {(((weightsum)/854))} grams")
             weightsum=0
         time.sleep(0.1)
     except (KeyboardInterrupt, SystemExit):
