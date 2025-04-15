@@ -1,10 +1,10 @@
 import time
 import RPi.GPIO as GPIO
-from hx711 import HX711
+from HX711 import HX711
 
 # Set up GPIO
 GPIO.setmode(GPIO.BCM)
-
+#test
 # Create an instance of HX711 with GPIO pins for data and clock
 hx = HX711(dout=5, pd_sck=6)
 
