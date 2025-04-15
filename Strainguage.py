@@ -19,11 +19,16 @@ hx.tare()
 print("Start reading values from strain gauge")
 
 # Continuously read values from the strain gauge
+i=0
+weightsum =0
 while True:
     try:
-        weight = hx.get_weight(20)  # Take 5 readings and average
-        print(f"Weight: {weight} grams")
-        time.sleep(0.4)
+        weight = hx.get_weight(5)  # Take 5 readings and average
+        weightsum += weight
+        i += 1
+        if i == 4:
+            print(f"Weight: {weightsum/4} grams")
+        time.sleep(0.1)
     except (KeyboardInterrupt, SystemExit):
         GPIO.cleanup()
         break
