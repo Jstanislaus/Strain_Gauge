@@ -36,7 +36,7 @@ while True:
         if i == 50:
             for j in range(len(array)):
                 totalsum +=array[j]
-                print(j)
+                print(array[j])
             print(f"average weight: {totalsum} grams")
             time.sleep(10)
     except (KeyboardInterrupt, SystemExit):
