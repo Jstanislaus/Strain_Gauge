@@ -28,6 +28,7 @@ while True:
         i += 1
         if i %4==0:
             print(f"Weight: {weightsum/4} grams")
+            weightsum=0
         time.sleep(0.1)
     except (KeyboardInterrupt, SystemExit):
         GPIO.cleanup()
