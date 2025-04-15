@@ -6,7 +6,7 @@ from hx711py.hx711 import HX711
 GPIO.setmode(GPIO.BCM)
 #test
 # Create an instance of HX711 with GPIO pins for data and clock
-hx = HX711(dout=5, pd_sck=6)
+hx = HX711(dout=25, pd_sck=24)
 
 # Set up calibration factor (you might need to experiment with this value)
 hx.set_reading_format("MSB", "MSB")
