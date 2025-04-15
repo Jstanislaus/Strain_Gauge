@@ -23,7 +23,7 @@ while True:
     try:
         weight = hx.get_weight(20)  # Take 5 readings and average
         print(f"Weight: {weight} grams")
-        time.sleep(0.1)
+        time.sleep(0.3)
     except (KeyboardInterrupt, SystemExit):
         GPIO.cleanup()
         break
