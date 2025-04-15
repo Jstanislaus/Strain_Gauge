@@ -21,7 +21,7 @@ print("Start reading values from strain gauge")
 # Continuously read values from the strain gauge
 while True:
     try:
-        weight = hx.get_weight(5)  # Take 5 readings and average
+        weight = hx.get_weight(20)  # Take 5 readings and average
         print(f"Weight: {weight} grams")
         time.sleep(0.1)
     except (KeyboardInterrupt, SystemExit):
