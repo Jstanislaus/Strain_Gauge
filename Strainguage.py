@@ -26,7 +26,7 @@ while True:
         weight = hx.get_weight(5)  # Take 5 readings and average
         weightsum += weight
         i += 1
-        if i == 4:
+        if i %4==0:
             print(f"Weight: {weightsum/4} grams")
         time.sleep(0.1)
     except (KeyboardInterrupt, SystemExit):
