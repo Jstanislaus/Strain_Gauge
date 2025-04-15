@@ -30,14 +30,14 @@ while True:
         i += 1
         if i %4==0:
             print(f"Weight: {((weightsum))} grams")
-            weightsum=0
+            
             array.append(weightsum)
+            weightsum=0
         time.sleep(0.1)
         if i == 50:
-            for j in range(len(array)):
+            for j in array:
                 totalsum +=array[j]
-                print(array[j])
-            print(f"average weight: {totalsum} grams")
+            print(f"average weight: {totalsum/len(array)} grams")
             time.sleep(10)
     except (KeyboardInterrupt, SystemExit):
         GPIO.cleanup()
