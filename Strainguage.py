@@ -1,6 +1,6 @@
 import time
 import RPi.GPIO as GPIO
-from HX711 import HX711
+from hx711py import HX711
 
 # Set up GPIO
 GPIO.setmode(GPIO.BCM)
