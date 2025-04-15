@@ -1,12 +1,12 @@
 import time
 import RPi.GPIO as GPIO
-from hx711py import hx711
+from hx711py.hx711 import HX711
 
 # Set up GPIO
 GPIO.setmode(GPIO.BCM)
 #test
 # Create an instance of HX711 with GPIO pins for data and clock
-hx = hx711(dout=5, pd_sck=6)
+hx = HX711(dout=5, pd_sck=6)
 
 # Set up calibration factor (you might need to experiment with this value)
 hx.set_reading_format("MSB", "MSB")
